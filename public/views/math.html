@@ -1,0 +1,150 @@
+
+
+<div class="container-fluid text-center" >
+
+  <div class="problem"><h3><strong>{{problem}}</strong></h3></div>
+  <div class="yourAnswer">{{yourAnswer}}</div>
+
+  <div class="sideBar col-sm-3" >
+    <div class="yourScore">Your Score: {{yourScore}}</div>
+    <div Class="lives">Lives Remaining: {{lives}}.</div>
+  </div>
+
+  <div class="gridbox col-sm-6">
+    <div class="wholeRow1">
+      <div class="gridBlock row1"  ng-click="showNumbers=11;doMath(pA1)">
+        <div class="monsterBox">
+          <image ng-show="showNumbers == 11"  src="../images/eduMonster.jpg">
+        </div>
+        <div class="nimbers">{{pA1}}</div>
+        </div>
+
+      <div class="gridBlock row1" ng-click="showNumbers=12;doMath(pA2)">
+        <div class="monsterBox">
+          <image ng-show="showNumbers == 12" src="../images/eduMonster.jpg">
+        </div>
+        <div class="nimbers">{{pA2}}</div>
+      </div>
+
+      <div class="gridBlock row1" ng-click="showNumbers=13;doMath(pA3)">
+        <div class="monsterBox">
+          <image ng-show="showNumbers == 13" src="../images/eduMonster.jpg">
+        </div>
+        <div class="nimbers">{{pA3}}</div>
+      </div>
+
+      <div class="gridBlock row1" ng-click="showNumbers=14;doMath(pA4)">
+        <div class="monsterBox">
+          <image ng-show="showNumbers == 14" src="../images/eduMonster.jpg">
+        </div>
+        <div class="nimbers">{{pA4}}</div>
+      </div>
+
+    </div>
+
+    <div class="wholeRow2">
+
+      <div class="gridBlock row2" ng-click="showNumbers=21;doMath(pA5)">
+        <div class="monsterBox">
+          <image ng-show="showNumbers == 21" src="../images/eduMonster.jpg">
+        </div>
+        <div class="nimbers">{{pA5}}</div>
+      </div>
+
+      <div class="gridBlock row2" ng-click="showNumbers=22;doMath(pA6)">
+        <div class="monsterBox">
+          <image ng-show="showNumbers == 22" src="../images/eduMonster.jpg">
+        </div>
+        <div class="nimbers">{{pA6}}</div>
+      </div>
+
+      <div class="gridBlock row2" ng-click="showNumbers=23;doMath(pA7)">
+        <div class="monsterBox">
+          <image ng-show="showNumbers == 23" src="../images/eduMonster.jpg">
+        </div>
+        <div class="nimbers">{{pA7}}</div>
+      </div>
+
+      <div class="gridBlock row2" ng-click="showNumbers=24;doMath(pA8)">
+        <div class="monsterBox">
+          <image ng-show="showNumbers == 24" src="../images/eduMonster.jpg">
+        </div>
+        <div class="nimbers">{{pA8}}</div>
+      </div>
+
+    </div>
+    <div class="wholeRow3">
+
+      <div class="gridBlock row3" ng-click="showNumbers=31;doMath(pA9)">
+        <div class="monsterBox">
+          <image ng-show="showNumbers == 31" src="../images/eduMonster.jpg">
+        </div>
+        <div class="nimbers">{{pA9}}</div>
+      </div>
+
+      <div class="gridBlock row3" ng-click="showNumbers=32;doMath(pA10)">
+        <div class="monsterBox">
+          <image ng-show="showNumbers == 32" src="../images/eduMonster.jpg">
+        </div>
+        <div class="nimbers">{{pA10}}</div
+      ></div>
+
+      <div class="gridBlock row3" ng-click="showNumbers=33;doMath(pA11)">
+        <div class="monsterBox">
+          <image ng-show="showNumbers == 33" src="../images/eduMonster.jpg">
+        </div>
+        <div class="nimbers">{{pA11}}</div
+      ></div>
+
+      <div class="gridBlock row3" ng-click="showNumbers=34;doMath(pA12)">
+        <div class="monsterBox">
+          <image ng-show="showNumbers == 34" src="../images/eduMonster.jpg">
+        </div>
+        <div class="nimbers">{{pA12}}</div
+      ></div>
+
+    </div>
+
+    <div class="wholeRow4">
+
+      <div class="gridBlock row4" ng-click="showNumbers=41;doMath(pA13)">
+        <div class="monsterBox">
+          <image ng-show="showNumbers == 41" src="../images/eduMonster.jpg">
+        </div>
+        <div class="nimbers">{{pA13}}</div
+      ></div>
+
+      <div class="gridBlock row4" ng-click="showNumbers=42;doMath(pA14)">
+        <div class="monsterBox">
+          <image ng-show="showNumbers == 42" src="../images/eduMonster.jpg">
+        </div>
+        <div class="nimbers">{{pA14}}</div>
+      </div>
+
+      <div class="gridBlock row4" ng-click="showNumbers=43;doMath(pA15)">
+        <div class="monsterBox">
+          <image ng-show="showNumbers == 43" src="../images/eduMonster.jpg">
+        </div>
+        <div class="nimbers">{{pA15}}</div
+      ></div>
+
+      <div class="gridBlock row4" ng-click="showNumbers=44;doMath(pA16)">
+        <div class="monsterBox">
+          <image ng-show="showNumbers == 44" src="../images/eduMonster.jpg">
+        </div>
+        <div class="nimbers">{{pA16}}</div
+      ></div>
+
+    </div>
+  </div>
+
+  <div class="highScoreTable col-sm-3">
+    <h2 class="highScoreRows"><strong>Here are the high scores!</strong></h2>
+    <div ng-repeat="score in highScores | orderBy: 'score': 'reverse'">
+      <p class="highScoreRows">{{score.name}}: {{score.score}}</p>
+  </div>
+
+
+
+
+</div>

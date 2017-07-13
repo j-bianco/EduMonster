@@ -1,0 +1,55 @@
+.gridBlock {
+  height: 190px;
+  width: 190px;
+  border: 1px solid black;
+  margin: 0;
+}
+
+.row1 {
+  background-color: blue;
+  display: inline-block;
+}
+
+.row2 {
+  background-color: orange;
+  display: inline-block;
+}
+
+.row3 {
+  background-color: red;
+  display: inline-block;
+}
+
+.row4 {
+  background-color: green;
+  display: inline-block;
+}
+
+.nimbers {
+  font-size: 30px;
+  color: white;
+  bottom: 0;
+}
+
+.monsterBox {
+  height: 150px;
+}
+
+.highScoreRows {
+  width: 50%;
+  font-size: 32px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+.sideBar {
+  font-size: 32px;
+}
+
+.yourAnswer {
+  font-size: 32px;
+}
+
+body {
+  background-color:blanchedalmond
+}
